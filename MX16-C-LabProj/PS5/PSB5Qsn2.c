@@ -11,7 +11,7 @@ void processArr(char *ch, int aSz, char ch1, char ch2);
 int main()
 {
     char str[MAXSZ];
-    printf("\nEnter the string again TVPTVP : \n");
+    printf("\nEnter the string again TVP : \n");
     scanf("%s", str);
     int theStrLen = strlen(str);
     printf("\nThe string is  : %s, and length is : %d", str, theStrLen);  
