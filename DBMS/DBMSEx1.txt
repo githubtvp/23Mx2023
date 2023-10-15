@@ -1,0 +1,30 @@
+insert into employee values(&empno, '&fname', '&lname', '&job', 
+'&mgr','&dob','&hiredate', &salary, &comm);
+commit;
+
+1. select * from employee;
+
+2. select * from employee 
+where salary > 3000 and dob between '01-Jan-65' and '12-Dec-75';  
+
+select * from employee 
+where salary > 3000 and dob between '01-Jan-65' and '12-Dec-75';  
+
+select fname, lname from employee where dob > '05-Sep-1993';
+
+select fname, lname, salary, job from employee 
+where job = 'Analyst Manager' OR job = 'Manager';
+
+select fname from employee where fname like 'K%' or fname like 'S%';
+
+select * from employee where dob = (select min(dob) from employee);
+
+select empno, fname, lname, job, salary from  employee 
+where salary >= 30000 and job = 'Analyst Manager' or job = 'Manager';
+
+
+select empno, fname, lname, job, salary from  employee 
+where job = 'Salesman' or job = 'Programmer';
+
+select empno, lname, salary from  employee 
+where lname in('Kumar', 'Manian', 'Muthu', 'Ram');
