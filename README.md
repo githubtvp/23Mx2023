@@ -5,6 +5,20 @@ https://www.freecodecamp.org/news/create-and-sync-git-and-github-repositories/#:
 
 git init
 
+1. git add
+1A. git add --all
+2. git commit -m "the msg"
+2A. git commit -a "the msg"
+3. git pull 
+4. git push
+
+5. git status
+6. git remote -v
+7. git branch -a
+
+8. git pull 23Mx2023-gh main
+9. git push 23Mx2023-gh main
+
 ------------------------------------------
 
 How to Commit Files to the Local Repository
