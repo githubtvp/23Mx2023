@@ -1,12 +1,6 @@
-console.log("Print all Even natural numbers from 1 to n ");
-let n = 100;
-console.log("n = " + n);
-let x = 1;
-while (x <= n) 
-{
-  if (x % 2 != 0) {
-    console.log(x);
-  }
-  x+= 2;
-}      
- 
+console.log("Alphabets from (a-z) are:"); 
+console.log(`ASCII character : ${String.fromCharCode(32)} (space) is = 32`);
+for (i = 33; i <= 126; i++) {
+  console.log(`ASCII character : ${String.fromCharCode(i)} and its value is ${i}`);
+
+}

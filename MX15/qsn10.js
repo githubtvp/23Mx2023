@@ -1,9 +1,9 @@
-let n = 123456789;
+let n = 12345;
 let m = 10;
-let count = 0;
+let product = 1;
 while (n != 0 )
 {
-  n = parseInt(n / m);
-  count++;
+  product *= parseInt(n % m);
+  n = parseInt(n / m);  
 }
-console.log(`No of digits in number = ${count}`);
+console.log(`Product of the digits in the number = ${product}`);

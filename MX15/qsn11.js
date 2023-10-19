@@ -1,14 +1,10 @@
-let n = 300456780;
+let n = prompt("Enter a number : ", "0");
+//let n = 12345;
 let m = 10;
-if (n < 10) {
-  console.log(`Only single digit, the number is ${n}`);
+let digToPr = 1;
+while (n != 0 )
+{
+  digToPr = parseInt(n % m);
+  console.log(digToPr);
+  n = parseInt(n / m);  
 }
-else {
-  let r = parseInt(n % m); 
-  console.log(`Last digit is : ${r}`);
-  while (n >= m) {
-    n = parseInt(n / m);    
-  }
-  console.log(`First digit is : ${n}`);
-}
-

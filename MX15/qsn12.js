@@ -1,17 +1,18 @@
-let n = 34567;
-let m = 10;
-if (n < 10) {
-  console.log(`Only single digit, the sum of number is ${n}`);
+let n = prompt("Enter a number : ", "0");
+if (isPalindrome(n)) {
+  console.log(`${n} is a palindrome.`);
+} else {
+  console.log(`${n} is not a palindrome.`);
 }
-else 
-{
-  let r = parseInt(n % m); ;
-  let sum = r;
-  console.log(`Last digit is : ${r}`);
-  while (n >= m) {
-    n = parseInt(n / m);    
+
+function isPalindrome(num) {
+  const numStr = num.toString();
+  const len = numStr.length;
+  for (let i = 0; i < len / 2; i++) {
+      if (numStr[i] !== numStr[len - 1 - i]) {
+          return false;
+      }
   }
-  sum += n;
-  console.log(`First digit is : ${n}`);
-  console.log(`Sum of first and last digit is : ${sum}`);
+  return true;
 }
+

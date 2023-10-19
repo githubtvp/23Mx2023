@@ -1,11 +1,13 @@
-console.log("Print all Even natural numbers from 1 to n ");
-let n = 100;
-console.log("n = " + n);
-let x = 2;
-while (x <= n) 
+console.log("Print multiplication table ");
+let m = 4;
+let n = 1;
+let result = 0;
+let max = 16;
+console.log("Multiplication table for m = " + m);
+while (n <= max) 
 {
-  if (x % 2 == 0) {
-    console.log(x);
-  }
-  x+= 2;
-}
+  result = m * n;
+  console.log(`${m} x ${n} = ${result}`);
+  n++;
+}      
+ 

@@ -1,9 +1,10 @@
-let n = 12345;
-let m = 10;
-let sum = 0;
+console.log('x value raised to power n :')
+let x = 5;
+let n = 4;
+let result = 1;
 while (n != 0 )
 {
-  sum += parseInt(n % m);
-  n = parseInt(n / m);  
+  result *= x;   
+  n--;
 }
-console.log(`Sum of the digits in number = ${sum}`);
+console.log(result);
