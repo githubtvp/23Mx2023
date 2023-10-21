@@ -79,12 +79,15 @@ int main()
 void insertNodeAtBegining(int aData, struct Node *aHead)
 {
     cout <<"\nhere 1 "<< endl;
+    cout <<"\n aHead->data : "<< aHead->data << endl;
+
     int theData = aData;
     struct Node *temp = new Node();
     temp->data = theData;
     temp->next =aHead;    
     aHead = temp;  
     cout <<"\nhere 2 : "<< temp->data << endl;
+    cout <<"\nhere 3 : "<< temp->next->data << endl;
 
 }
 
