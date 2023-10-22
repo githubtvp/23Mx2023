@@ -1,0 +1,15 @@
+{
+  "name": "23mx2023",
+  "version": "1.0.0",
+  "description": "------------------------------------------\r https://www.freecodecamp.org/news/create-and-sync-git-and-github-repositories/#:~:text=To%20synchronize%20our%20local%20and,repository%20using%20the%20push%20command.",
+  "main": "Hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
