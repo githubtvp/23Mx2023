@@ -136,7 +136,7 @@ function displayArray() {
 
 function sortArray() {
     arr.sort();
-    console.log("Array sorted.");
+    console.log("Array sorted.", arr);
 }
 
 function findElement() {
