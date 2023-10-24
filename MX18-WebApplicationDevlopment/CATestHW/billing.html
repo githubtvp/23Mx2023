@@ -25,13 +25,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="text" id="fname" placeholder="First name" autocomplete="off" pattern="[A-Za-z]+"  aria-label="First name"
-                                    size="25">
+                            <td><input type="text" id="fname" placeholder="First name" autocomplete="off"
+                                    pattern="[A-Za-z]+" aria-label="First name" size="25">
                             </td>
                             <td colspan="2">
                                 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
                             </td>
-                            <td><input type="text" id="lname" placeholder="Last name"  autocomplete="off" pattern="[A-Za-z]+" aria-label="Last name" size="25">
+                            <td><input type="text" id="lname" placeholder="Last name" autocomplete="off"
+                                    pattern="[A-Za-z]+" aria-label="Last name" size="25">
                             </td>
                         </tr>
                         <tr>
@@ -40,8 +41,8 @@
                         </tr>
                         <tr>
                             <td colspan="5">
-                                <input type="email" id="email" placeholder="name@anywhere.com" autocomplete="off" aria-label="Email address"
-                                    size="65">
+                                <input type="email" id="email" placeholder="name@anywhere.com" autocomplete="off"
+                                    aria-label="Email address" size="65">
                             </td>
                         </tr>
                         <tr>
@@ -90,7 +91,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" id="zip" placeholder="Zip" pattern="[1-9][0-9]{5}$"  aria-label="zip" width="25">
+                                <input type="text" id="zip" placeholder="Zip" pattern="[1-9][0-9]{5}$" aria-label="zip"
+                                    width="25">
                             </td>
                             <td colspan="1">
                                 <p>&nbsp; &nbsp; </p>
@@ -115,7 +117,7 @@
                         </tr>
                         <tr>
                             <td><label id="productCat">Agricultural Products</label>
-                            </td>                           
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -127,7 +129,9 @@
                         </tr>
                         <tr>
                             <td><label for="productName">ProductName</label></td>
-                            <td><p id="productName">Raw Agricultural Grains</p></td>
+                            <td>
+                                <p id="productName">Raw Agricultural Grains</p>
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -151,9 +155,10 @@
                         </tr>
                     </table>
                     <a class="btn btn-primary" type="reset" onclick="reset()">Reset</a>
-                    <a class="btn btn-primary" href="product.html" role="button">Back</a>
+                    <a class="btn btn-primary" href="product.html" role="button" onclick="reset()">Back</a>
                     <a class="btn btn-primary" href="index.html" role="button">Cancel</a>
-                    <a class="btn btn-primary" href="summary.html" role="button" onclick="placeOrder()">Place Order</a>
+                    <a id="btnPlaceOrder" class="btn btn-primary disabled" href="summary.html" role="button"
+                        onclick="placeOrder()">Place Order</a>
                 </fieldset>
             </div>
         </form>

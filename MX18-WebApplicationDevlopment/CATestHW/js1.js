@@ -18,8 +18,10 @@ function qtyChg() {
     fee = 0.1 * price;
     document.querySelector('#fee').innerHTML = fee;
     totalAmt = productAmt + fee;
-    document.querySelector('#totalAmt').innerHTML = totalAmt;
+    document.querySelector('#totalAmt').innerHTML = totalAmt;  
+    document.querySelector('#btnPlaceOrder').classList.remove('disabled');
 }
+
 
 function reset() {
     document.querySelector('#qty').value = "";
@@ -34,17 +36,16 @@ function confirmOrder() {
     msg("Thank You. \nYour order will be delivered soon!");
 }
 
-function placeOrder() {
+function placeOrder() {   
     if (typeof (localStorage) !== "undefined") {
-        storeLocalBilling();
+        storeLocalBilling();     
     }
     else {
         msg("Sorry, local storage Un defined");
     }
 }
 
-function storeLocalBilling() {
-
+function storeLocalBilling() {   
     let fname = document.querySelector('#fname').value;
     localStorage.setItem("fname", fname);
     let lname = document.querySelector('#lname').value;
@@ -112,13 +113,11 @@ function getPrevEntries() {
     document.querySelector('#p1').innerHTML = p1Txt;    
     document.querySelector('#p2').innerHTML = p2Txt;    
     document.querySelector('#p3').innerHTML = p3Txt;    
-    document.querySelector('#p4').innerHTML = p4Txt;   
-    
+    document.querySelector('#p4').innerHTML = p4Txt;  
     document.querySelector('#p5').innerHTML = p5Txt;    
     document.querySelector('#p6').innerHTML = p6Txt;    
     document.querySelector('#p7').innerHTML = p7Txt;    
     document.querySelector('#p8').innerHTML = p8Txt;   
-
  }
 
  function onLoadBillingPage()
